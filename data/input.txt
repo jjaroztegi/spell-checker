@@ -1,0 +1,25 @@
+This is a sampel text for testing the spel checker application.
+
+The quick brown fox jumps over the lasy dog. This sentance contains several misspeled words that should be detcted by the spell checker.
+
+Here are some numbers that should be valid: 2020, 40,000, 3.141592, and 123.
+
+Words with numbers like p34r and h3llo should be marked as incorect.
+
+Possessives should work: John's book, the students' papers, the President's speech.
+
+Contractions should also work: didn't, shouldn't, wouldn't, couldn't, won't, I'm, you're, they're, we've, I'll.
+
+This paragraph tests various punctuation marks! Does it work correctly? Yes, it does. Let's see: commas, semicolons; dashes - and more... ellipses... and "quotes" too.
+
+UPPERCASE WORDS should be recognized, as well as MixedCase words.
+
+Some more misspellings: recieve, occured, definately, seperate, arguement, begining, occassion.
+
+Testing edge cases: can't, won't, shouldn't've (complex contraction).
+
+Parents' day and teachers' lounge should be valid possessives.
+
+The year 2025 is valid, so is the number 42 and decimals like 3.14159.
+
+Final test with more errrors to catch: teh, adn, taht, thier, wich, untill, finnally.
