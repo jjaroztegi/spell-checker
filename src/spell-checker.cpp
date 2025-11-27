@@ -390,16 +390,15 @@ int main(int argc, char* argv[]) {
 
   unsigned int numThreads = std::thread::hardware_concurrency();
   if (numThreads == 0) numThreads = 4;
-  std::clog << "Using " << numThreads << " threads" << std::endl;
 
   std::vector<WordInfo> results;
 
   if (inputText.length() < 100000 || numThreads == 1) {
-    std::clog << "Processing with single thread..." << std::endl;
+    std::clog << "Processing with single thread (Input < 100KB)..." << std::endl;
     results.reserve(inputText.length() / 5);
     extractWords(inputText, 0, dictionary, results);
   } else {
-    std::clog << "Processing with multiple threads..." << std::endl;
+    std::clog << "Processing with " << numThreads << " threads..." << std::endl;
     size_t chunkSize = inputText.length() / numThreads;
     std::vector<std::thread> threads;
     std::vector<std::vector<WordInfo>> threadResults(numThreads);
